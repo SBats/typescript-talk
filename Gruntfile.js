@@ -37,6 +37,11 @@ module.exports = function(grunt) {
 					'css/reveal.css': 'css/reveal.scss',
 				}
 			},
+			custom: {
+				files: {
+					'css/custom-style.css': 'css/custom-style.scss',
+				}
+			},
 			themes: {
 				files: [
 					{
@@ -52,14 +57,16 @@ module.exports = function(grunt) {
 
 		autoprefixer: {
 			dist: {
-				src: 'css/reveal.css'
+				src: 'css/reveal.css',
+				src: 'css/custom-style.css'
 			}
 		},
 
 		cssmin: {
 			compress: {
 				files: {
-					'css/reveal.min.css': [ 'css/reveal.css' ]
+					'css/reveal.min.css': [ 'css/reveal.css' ],
+					'css/custom-style.min.css': [ 'css/custom-style.css' ]
 				}
 			}
 		},
@@ -125,6 +132,10 @@ module.exports = function(grunt) {
 				files: [ 'css/reveal.scss' ],
 				tasks: 'css-core'
 			},
+			custom: {
+				files: [ 'css/custom-style.scss' ],
+				tasks: 'css-custom'
+			},
 			html: {
 				files: [ '*.html']
 			},
@@ -160,6 +171,9 @@ module.exports = function(grunt) {
 
 	// Core framework CSS
 	grunt.registerTask( 'css-core', [ 'sass:core', 'autoprefixer', 'cssmin' ] );
+
+	// Customisation CSS
+	grunt.registerTask( 'css-custom', [ 'sass:custom', 'autoprefixer', 'cssmin' ] );
 
 	// All CSS
 	grunt.registerTask( 'css', [ 'sass', 'autoprefixer', 'cssmin' ] );

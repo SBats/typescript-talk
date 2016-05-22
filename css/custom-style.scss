@@ -1,0 +1,8 @@
+.talker {
+  float: left;
+  width: 50%;
+  .reveal & img {
+    border: none;
+    background: transparent;
+  }
+}
