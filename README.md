@@ -1,12 +1,14 @@
 # Some feedback on Typescript in our coders lives
-
 This is the slideshow for a talk about Typescript we'll be giving, [@enguerran](https://github.com/enguerran) and [@SBats](https://github.com/SBats/).
 
 It uses [reveal.js](https://github.com/hakimel/reveal.js) and will be written in french.
 
+## Project commands
+* Init the project: `npm install`
+* Launch dev server with live-reload: `npm start`
+
 
 ## Content
-
 1. Intro et présentation des intervenants
 
 2. Qu'est-ce que Typescript ?
