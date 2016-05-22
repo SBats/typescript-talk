@@ -1,6 +1,8 @@
 # Some feedback on Typescript in our coders lives
 
-This is the slideshow for a talk about Typescript we'll be giving with [@enguerran](https://github.com/enguerran). It uses [reveal.js](https://github.com/hakimel/reveal.js) and will be written in french.
+This is the slideshow for a talk about Typescript we'll be giving, [@enguerran](https://github.com/enguerran) and [@SBats](https://github.com/SBats/).
+
+It uses [reveal.js](https://github.com/hakimel/reveal.js) and will be written in french.
 
 
 ## Content
