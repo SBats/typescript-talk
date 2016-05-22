@@ -30,3 +30,58 @@
     }
   }
 }
+
+.editors-list {
+  .reveal & {
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  .editors-list-item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 2rem;
+    img {
+      height: 4rem;
+      max-width: 4rem;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+    }
+    a {
+      display: block;
+      color: transparentize(white, 0.2);
+
+      &:hover, &:focus {
+        color: white;
+
+        img {
+          background: none;
+          box-shadow: none;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+.reveal .typings-cli {
+  display: block;
+  color: transparentize(white, 0.2);
+
+  img {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  &:hover, &:focus {
+    color: white;
+
+    img {
+      background: none;
+      box-shadow: none;
+      transform: scale(1.05);
+    }
+  }
+}
