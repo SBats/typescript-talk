@@ -20,8 +20,8 @@ It uses [reveal.js](https://github.com/hakimel/reveal.js) and will be written in
 
 3. Les outils disponibles
   * Test en ligne : http://www.typescriptlang.org/play/
-  * Editeurs : **Visual Studio** & **Visual studio** code
-  * Plugins : **Atom**, **Sublime Text**, **Webstorm**, **Vim**
+  * Editeurs : **Visual Studio (2013 - 2015)**, **Visual studio code**, **Webstorm**
+  * Plugins : **Atom**, **Eclipse**, **Emacs**, **Sublime Text**, **Vim**
   * Typings : https://github.com/typings/typings
 
 4. Les features du typage
@@ -29,7 +29,7 @@ It uses [reveal.js](https://github.com/hakimel/reveal.js) and will be written in
   * Vérification à la transcompilation (les meilleurs tests du monde) ?
   * Les **Interfaces**
   * Le **Casting**
-  * Une auto-completion plus rapdie et précise
+  * Une auto-completion plus rapide et précise
 
 5. Les features du futur
   * ES6 et plus encore
