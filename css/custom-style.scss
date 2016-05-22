@@ -2,9 +2,14 @@
   font-size: 2em;
   // font-weight: normal;
 }
+
 .talker {
   float: left;
   width: 50%;
+}
+
+.talker, .company {
+  display: block;
   .name {
     line-height: 1em;
     margin-top: 1em;
@@ -16,5 +21,12 @@
   .reveal & img {
     border: none;
     background: transparent;
+  }
+  &:hover, &:focus {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+    .reveal & img {
+      background: none;
+      box-shadow: none;
+    }
   }
 }
