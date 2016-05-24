@@ -1,98 +1,96 @@
-.reveal h1 {
-  font-size: 2em;
-}
-
-.reveal h3 {
-  font-weight: normal;
-  strong {
-    color: #42affa;
-  }
-}
-
-.talker {
-  float: left;
-  width: 50%;
-}
-
-.talker, .company {
-  display: block;
-  .name {
-    line-height: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  .job {
-    font-weight: lighter;
-  }
-  .reveal & img {
-    border: none;
-    background: transparent;
-  }
-  &:hover, &:focus {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
-    .reveal & img {
-      background: none;
-      box-shadow: none;
+body {
+  color: #1877C8;
+  
+  .reveal {
+    
+    .main-title {
+      font-size: 2em;
     }
-  }
-  .sub {
-    font-size: 1.8rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-}
-
-.editors-list {
-  .reveal & {
-    margin: 0;
-    list-style: none;
-    text-align: center;
-  }
-  .editors-list-item {
-    display: inline-block;
-    vertical-align: top;
-    margin: 2rem;
-    img {
-      height: 4rem;
-      max-width: 4rem;
-      background: transparent;
-      border: none;
-      box-shadow: none;
+    .slide-title {
+      font-weight: normal;
+      &--strong {
+        color: #1877C8;
+      }
     }
-    a {
+    .image {
+      background-color: #222;
+      &--noborder {
+        border: 0;
+      }
+    }
+    .talker {
+      float: left;
+      width: 50%;
+    }
+    .company,
+    .talker {
+      display: block;
+      &__name {
+        line-height: 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+      &__job {
+        font-weight: lighter;
+      }
+      &__image {
+        height: 173px;
+        border: none;
+        background: transparent;
+      }
+      &__sub {
+        font-size: 1.8rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+    }
+    .editors-list {
+      margin: 0;
+      list-style: none;
+      text-align: center;
+      &__item {
+        display: inline-block;
+        vertical-align: top;
+        margin: 2rem;
+      }
+      &__image {
+        height: 4rem;
+        max-width: 4rem;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+      }
+      &__link {
+        display: block;
+        color: transparentize(white, 0.2);
+        &:focus,
+        &:hover {
+          color: white;
+          img {
+            background: none;
+            box-shadow: none;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+    .typings-cli {
       display: block;
       color: transparentize(white, 0.2);
-
-      &:hover, &:focus {
+      img {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+      }
+      &:focus,
+      &:hover {
         color: white;
-
         img {
           background: none;
           box-shadow: none;
           transform: scale(1.1);
         }
       }
-    }
-  }
-}
-
-.reveal .typings-cli {
-  display: block;
-  color: transparentize(white, 0.2);
-
-  img {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-  }
-
-  &:hover, &:focus {
-    color: white;
-
-    img {
-      background: none;
-      box-shadow: none;
-      transform: scale(1.05);
     }
   }
 }
