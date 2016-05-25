@@ -2,276 +2,276 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>Retour d'expérience sur Typescript</title>
+  <title>Retour d'expérience sur Typescript</title>
 
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/black.css">
-	<link rel="stylesheet" href="css/custom-style.css">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css">
+  <link rel="stylesheet" href="css/custom-style.css">
 
-	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="lib/css/zenburn.css">
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
 
-	<!-- Printing and PDF exports -->
-	<script>
-		var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-	</script>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
 </head>
 
 <body>
-	<div class="reveal">
-		<div class="slides">
-			<section>
-				<h1 class="main-title">Retour d'expérience</h1>
-				<img class="image image--noborder" src="assets/typescript-logo.svg" alt="">
-			</section>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1 class="main-title">Retour d'expérience</h1>
+        <img class="image image--noborder" src="assets/typescript-logo.svg" alt="">
+      </section>
 
-			<!-- INTRO -->
-			<section>
-				<section>
-					<h2>Qui sommes-nous ?</h2></section>
-				<section>
-					<a href="https://github.com/enguerran" class="talker">
-						<img class="talker__image" src="assets/ticabri-pearltrees.png" alt="Photo d'Enguerran Colson" />
-						<h3 class="talker__name">Enguerran<br/>Colson</h3>
-						<h4 class="talker__job">Développeur fullstack</h4>
-					</a>
-					<a href="https://github.com/SBats" class="talker">
-						<img class="talker__image" src="assets/sba.png" alt="Photo de Simon Bats" />
-						<h3 class="talker__name">Simon<br/>Bats</h3>
-						<h4 class="talker__job">Développeur front-end</h4>
-					</a>
-				</section>
-				<section>
-					<a href="http://makina-corpus.com/" class="company">
-						<img src="assets/logo-makinacorpus.svg" alt="Logo de Makina Corpus" />
-						<h4 class="company__job">
-								<div>SSLL</div>
-								<div class="company__sub">Développement métier - CMS - Frontend<br/>Mobile - Cartographie</div>
-							</h4>
-					</a>
-				</section>
-			</section>
-			<!-- END INTRO -->
+      <!-- INTRO -->
+      <section>
+        <section>
+          <h2>Qui sommes-nous ?</h2></section>
+        <section>
+          <a href="https://github.com/enguerran" class="talker">
+            <img class="talker__image" src="assets/ticabri-pearltrees.png" alt="Photo d'Enguerran Colson" />
+            <h3 class="talker__name">Enguerran<br/>Colson</h3>
+            <h4 class="talker__job">Développeur fullstack</h4>
+          </a>
+          <a href="https://github.com/SBats" class="talker">
+            <img class="talker__image" src="assets/sba.png" alt="Photo de Simon Bats" />
+            <h3 class="talker__name">Simon<br/>Bats</h3>
+            <h4 class="talker__job">Développeur front-end</h4>
+          </a>
+        </section>
+        <section>
+          <a href="http://makina-corpus.com/" class="company">
+            <img src="assets/logo-makinacorpus.svg" alt="Logo de Makina Corpus" />
+            <h4 class="company__job">
+                <div>SSLL</div>
+                <div class="company__sub">Développement métier - CMS - Frontend<br/>Mobile - Cartographie</div>
+              </h4>
+          </a>
+        </section>
+      </section>
+      <!-- END INTRO -->
 
-			<!-- PART 1 -->
-			<section>
-				<section>
-					<h2>Typescript c'est quoi ?</h2></section>
-				<section>
-					<h3>Un typage fort pour le JavaScript</h3>
-					<img src="assets/you-dont-say.jpg" alt="You don't say ?!">
-				</section>
-				<section>
-					<h3>Un code évolutif et maintenable</h3>
-				</section>
-				<section>
-					<h3>Un superset de JavaScript</h3>
-				</section>
-				<section>
-					<h3>Du pure JavaScript en sortie</h3>
-				</section>
-				<section>
-					<h3>OpenSource</h3>
-				</section>
-				<section>
-					<h3>Créé et maintenu par Microsoft</h3>
-				</section>
-			</section>
-			<!-- END PART 1 -->
+      <!-- PART 1 -->
+      <section>
+        <section>
+          <h2>Typescript c'est quoi ?</h2></section>
+        <section>
+          <h3>Un typage statique au-dessus de JavaScript</h3>
+          <img src="assets/you-dont-say.jpg" alt="You don't say ?!">
+        </section>
+        <section>
+          <ul>
+            <li>Un code beaucoup plus maintenable</li>
+            <li>Du pur JavaScript en sortie</li>
+            <li>Open Source</li>
+            <li>Des outils</li>
+          </ul>
+          <p>Créé et maintenu par</p>
+          <img class="image image--noborder image--small" src="assets/Microsoft-logo.svg" alt="Logo Microsoft">
+        </section>
+        <section>
+          <div class="stretch">
+            <iframe class="iframe iframe--fullpage" src="http://www.typescriptlang.org/play/index.html" frameborder="0"></iframe>
+          </div>
+        </section>
+      </section>
+      <!-- END PART 1 -->
 
-			<!-- PART 2 -->
-			<section>
-				<section>
-					<h2>Les outils disponibles</h2></section>
-				<section>
-					<a href="http://www.typescriptlang.org/play/">
-						<h3>Bac à sable en ligne</h3>
-						<img src="assets/playground-typescript-screenshot.png" alt="Capture d'écran du bac à sable TypeScript" />
-					</a>
-				</section>
-				<section>
-					<h3>Editeurs intégrant Typescript</h3>
-					<ul class="editors-list">
-						<li class="editors-list__item">
-							<a class="editors-list__link" href="https://www.visualstudio.com/">
-								<img class="editors-list__image" src="assets/visualstudio-logo.svg" alt="Visual Studio logo" />
-								<div>Visual Studio<br/>(2013 - 2015)</div>
-							</a>
-						</li>
-						<li class="editors-list__item">
-							<a class="editors-list__link" href="https://code.visualstudio.com/">
-								<img class="editors-list__image" src="assets/vscode-logo.svg" alt="Visual Studio Code logo" />
-								<div>Visual Studio<br/>Code</div>
-							</a>
-						</li>
-						<li class="editors-list__item">
-							<a class="editors-list__link" href="https://www.jetbrains.com/webstorm/">
-								<img class="editors-list__image" src="assets/webstorm-logo.svg" alt="Webstorm logo" />
-								<div>Webstorm</div>
-							</a>
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h3>Editeurs compatibles avec plugins</h3>
-					<ul class="editors-list">
-						<li class="editors-list__item">
-							<a class="editors-list__link" href="https://atom.io/packages/atom-typescript">
-								<img class="editors-list__image" src="assets/atom-logo.svg" alt="logo" />
-								<div>Atom</div>
-							</a>
-						</li>
-						<li class="editors-list__item">
-							<a class="editors-list__link" href="https://github.com/palantir/eclipse-typescript">
-								<img class="editors-list__image" src="assets/eclipse-logo.svg" alt="logo" />
-								<div>Eclipse</div>
-							</a>
-						</li>
-						<li class="editors-list__item">
-							<a class="editors-list__link" href="https://www.gnu.org/software/emacs/emacs.html">
-								<img class="editors-list__image" src="assets/emacs-logo.svg" alt="logo" />
-								<div>Emacs</div>
-							</a>
-						</li>
-						<li class="editors-list__item">
-							<a class="editors-list__link" href="https://github.com/Microsoft/TypeScript-Sublime-Plugin">
-								<img class="editors-list__image" src="assets/sublime-text-logo.svg" alt="logo" />
-								<div>Sublime<br/>Text</div>
-							</a>
-						</li>
-						<li class="editors-list__item">
-							<a class="editors-list__link" href="https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support#vim">
-								<img class="editors-list__image" src="assets/vim-logo.svg" alt="logo" />
-								<div>Vim</div>
-							</a>
-						</li>
-					</ul>
-				</section>
-				<section>
-					<a class="typings-cli" href="https://github.com/typings/typings">
-						<img src="assets/typings-logo.svg" alt="Typings logo" />
-						<div>Un CLI pour gérer ses types</div>
-					</a>
-				</section>
-			</section>
-			<!-- END PART 2 -->
+      <!-- PART 2 -->
+      <section>
+        <section>
+          <h2>Les outils disponibles</h2></section>
+        <section>
+          <a href="http://www.typescriptlang.org/play/">
+            <h3>Bac à sable en ligne</h3>
+            <img src="assets/playground-typescript-screenshot.png" alt="Capture d'écran du bac à sable TypeScript" />
+          </a>
+        </section>
+        <section>
+          <h3>Editeurs intégrant Typescript</h3>
+          <ul class="editors-list">
+            <li class="editors-list__item">
+              <a class="editors-list__link" href="https://www.visualstudio.com/">
+                <img class="editors-list__image" src="assets/visualstudio-logo.svg" alt="Visual Studio logo" />
+                <div>Visual Studio<br/>(2013 - 2015)</div>
+              </a>
+            </li>
+            <li class="editors-list__item">
+              <a class="editors-list__link" href="https://code.visualstudio.com/">
+                <img class="editors-list__image" src="assets/vscode-logo.svg" alt="Visual Studio Code logo" />
+                <div>Visual Studio<br/>Code</div>
+              </a>
+            </li>
+            <li class="editors-list__item">
+              <a class="editors-list__link" href="https://www.jetbrains.com/webstorm/">
+                <img class="editors-list__image" src="assets/webstorm-logo.svg" alt="Webstorm logo" />
+                <div>Webstorm</div>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Editeurs compatibles avec plugins</h3>
+          <ul class="editors-list">
+            <li class="editors-list__item">
+              <a class="editors-list__link" href="https://atom.io/packages/atom-typescript">
+                <img class="editors-list__image" src="assets/atom-logo.svg" alt="logo" />
+                <div>Atom</div>
+              </a>
+            </li>
+            <li class="editors-list__item">
+              <a class="editors-list__link" href="https://github.com/palantir/eclipse-typescript">
+                <img class="editors-list__image" src="assets/eclipse-logo.svg" alt="logo" />
+                <div>Eclipse</div>
+              </a>
+            </li>
+            <li class="editors-list__item">
+              <a class="editors-list__link" href="https://www.gnu.org/software/emacs/emacs.html">
+                <img class="editors-list__image" src="assets/emacs-logo.svg" alt="logo" />
+                <div>Emacs</div>
+              </a>
+            </li>
+            <li class="editors-list__item">
+              <a class="editors-list__link" href="https://github.com/Microsoft/TypeScript-Sublime-Plugin">
+                <img class="editors-list__image" src="assets/sublime-text-logo.svg" alt="logo" />
+                <div>Sublime<br/>Text</div>
+              </a>
+            </li>
+            <li class="editors-list__item">
+              <a class="editors-list__link" href="https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support#vim">
+                <img class="editors-list__image" src="assets/vim-logo.svg" alt="logo" />
+                <div>Vim</div>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <a class="typings-cli" href="https://github.com/typings/typings">
+            <img src="assets/typings-logo.svg" alt="Typings logo" />
+            <div>Un CLI pour gérer ses types</div>
+          </a>
+        </section>
+      </section>
+      <!-- END PART 2 -->
 
-			<!-- PART 3 -->
-			<section>
-				<section>
-					<h2>Les capacités du typage</h2></section>
-				<section>
-					<h3>Prédictabilité du code executé</h3>
-				</section>
-				<section>
-					<h3>Vérification à la transcompilation</h3>
-					<div>Les meilleurs tests du monde ?</div>
-				</section>
-				<section>
-					<h3>Les <strong>Interfaces</strong></h3>
-				</section>
-				<section>
-					<h3>Le <strong>Casting</strong></h3>
-				</section>
-				<section>
-					<h3>Une auto-completion plus rapide et précise</h3>
-				</section>
-			</section>
-			<!-- END PART 3 -->
+      <!-- PART 3 -->
+      <section>
+        <section>
+          <h2>Les capacités du typage</h2></section>
+        <section>
+          <h3>Prédictabilité du code executé</h3>
+        </section>
+        <section>
+          <h3>Vérification à la transcompilation</h3>
+          <div>Les meilleurs tests du monde ?</div>
+        </section>
+        <section>
+          <h3>Les <strong>Interfaces</strong></h3>
+        </section>
+        <section>
+          <h3>Le <strong>Casting</strong></h3>
+        </section>
+        <section>
+          <h3>Une auto-completion plus rapide et précise</h3>
+        </section>
+      </section>
+      <!-- END PART 3 -->
 
-			<!-- PART 4 -->
-			<section>
-				<section>
-					<h2>Le futur à portée de main</h2></section>
-				<section>
-					<h3>Intégration en avance des nouveautées ECMAScript</h3>
-				</section>
-				<section>
-					<h3>Une alternative à BabelJS</h3>
-					<div>Moins à la pointe en terme de fonctionalités</div>
-					<div>Plus restrictifs en terme de structure</div>
-				</section>
-			</section>
-			<!-- END PART 4 -->
+      <!-- PART 4 -->
+      <section>
+        <section>
+          <h2>Le futur à portée de main</h2></section>
+        <section>
+          <h3>Intégration en avance des nouveautées ECMAScript</h3>
+        </section>
+        <section>
+          <h3>Une alternative à BabelJS</h3>
+          <div>Moins à la pointe en terme de fonctionalités</div>
+          <div>Plus restrictifs en terme de structure</div>
+        </section>
+      </section>
+      <!-- END PART 4 -->
 
-			<!-- PART 5 -->
-			<section>
-				<section>
-					<h2>L'état d'esprit</h2></section>
-				<section>
-					<h3>Penser typé, c'est coder plus précis</h3>
-				</section>
-				<section>
-					<h3>Pouvoir faire des déclarations kilométriques</h3>
-				</section>
-				<section>
-					<h3>Privilégier l'accessibilité pour votre futur-vous ou votre équipe</h3>
-				</section>
-			</section>
-			<!-- END PART 5 -->
+      <!-- PART 5 -->
+      <section>
+        <section>
+          <h2>L'état d'esprit</h2></section>
+        <section>
+          <h3>Penser typé, c'est coder plus précis</h3>
+        </section>
+        <section>
+          <h3>Pouvoir faire des déclarations kilométriques</h3>
+        </section>
+        <section>
+          <h3>Privilégier l'accessibilité pour votre futur-vous ou votre équipe</h3>
+        </section>
+      </section>
+      <!-- END PART 5 -->
 
-			<!-- PART 6 -->
-			<section>
-				<section>
-					<h2>Typings ou l'IDE modulaire</h2></section>
-				<section>
-					<h3>Une banque énorme de descripteurs de types</h3>
-				</section>
-				<section>
-					<h3>La possibilité d'en créer facilement</h3>
-					<div>Interfaces</div>
-				</section>
-				<section>
-					<h3>Un CLI et un .json</h3>
-				</section>
-				<section>
-					<h3>Chaque projet ses besoins</h3>
-				</section>
-			</section>
-			<!-- END PART 6 -->
+      <!-- PART 6 -->
+      <section>
+        <section>
+          <h2>Typings ou l'IDE modulaire</h2></section>
+        <section>
+          <h3>Une banque énorme de descripteurs de types</h3>
+        </section>
+        <section>
+          <h3>La possibilité d'en créer facilement</h3>
+          <div>Interfaces</div>
+        </section>
+        <section>
+          <h3>Un CLI et un .json</h3>
+        </section>
+        <section>
+          <h3>Chaque projet ses besoins</h3>
+        </section>
+      </section>
+      <!-- END PART 6 -->
 
-			<!-- OUTRO -->
-			<section>
-				<section>
-					<h2>Bilan et conclusions</h2></section>
-			</section>
-			<!-- END OUTRO -->
+      <!-- OUTRO -->
+      <section>
+        <section>
+          <h2>Bilan et conclusions</h2></section>
+      </section>
+      <!-- END OUTRO -->
 
-			<section>
-				<h2>Des questions ?</h2>
-			</section>
+      <section>
+        <h2>Des questions ?</h2>
+      </section>
 
-			<section>
-				<h2>Merci</h2>
-			</section>
+      <section>
+        <h2>Merci</h2>
+      </section>
 
-		</div>
-	</div>
+    </div>
+  </div>
 
-	<script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.js"></script>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
 
-	<script>
-		// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+  <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-	</script>
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+  </script>
 </body>
 
 </html>
