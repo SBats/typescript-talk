@@ -52,6 +52,12 @@ body {
       padding-bottom: 3rem;
     }
   }
+  .created-by {
+    margin-top: 2rem;
+    &__image {
+      height: 70px;
+    }
+  }
   .editors-list {
     margin: 0;
     list-style: none;
