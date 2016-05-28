@@ -171,6 +171,26 @@ let videoHash = getElementHash(myVideo); // Type: Video
           <div>Pas le même objectif</div>
           <div>(Un peu moins de <a href="https://kangax.github.io/compat-table/es6/">fonctionnalités supportées de base</a>)</div>
         </section>
+        <section>
+          <h3>La configuration via tsconfig.json</h3>
+          <pre>
+<code data-trim class="hljs json">
+"compilerOptions": {
+  "target": "es5",
+  "module": "commonjs",
+  "noImplicitAny": true,
+  "removeComments": true,
+  "preserveConstEnums": true,
+  "outFile": "./build/tsc.js",
+  "sourceMap": true
+},
+"exclude": [
+  "node_modules",
+  "build"
+]
+</code>
+          </pre>
+        </section>
       </section>
       <!-- END PART 4 -->
 
