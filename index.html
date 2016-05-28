@@ -129,6 +129,20 @@ fetch(url, {method: 'GET'})
         </section>
         <section>
           <h3>Les <strong>Génériques</strong></h3>
+          <pre>
+<code data-trim class="hljs typescript">
+function getElementHash&lt;T&gt;(element: T): string {
+  return element.title.getHash + element.url.getHash;
+}
+
+let myPicture = new Picture(name, url);
+let myvideo = new Video(name, url);
+
+let pictureHash = getElementHash(myPicture); // Type: Picture
+
+let videoHash = getElementHash(myVideo); // Type: Video
+</code>
+          </pre>
         </section>
       </section>
       <!-- END PART 2 -->
