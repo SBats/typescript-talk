@@ -117,6 +117,15 @@ class Picture implements Image {
         </section>
         <section>
           <h3>Le <strong>Casting</strong></h3>
+          <pre>
+<code data-trim class="hljs typescript">
+fetch(url, {method: 'GET'})
+.then((response) => {
+   let myPicture = response.json() as Picture;
+   ...
+});
+</code>
+          </pre>
         </section>
         <section>
           <h3>Les <strong>Génériques</strong></h3>
