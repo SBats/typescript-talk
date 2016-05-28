@@ -7,8 +7,9 @@ body {
     font-size: 2em;
   }
   .slide-title {
-    font-weight: normal;
-    &--strong {
+    text-transform: initial;
+    margin-bottom: 3rem;
+    &--blue {
       color: #1877C8;
     }
   }
