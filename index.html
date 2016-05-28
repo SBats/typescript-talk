@@ -99,6 +99,21 @@
         </section>
         <section>
           <h3>Les <strong>Interfaces</strong></h3>
+          <pre>
+<code data-trim class="hljs typescript">
+interface Image {
+  Url: string;
+  Title: string;
+  Likes?: number;
+}
+
+class Picture implements Image {
+  Url: string;
+  Title: string;
+  constructor(mySweetTitle) {...}
+}
+</code>
+          </pre>
         </section>
         <section>
           <h3>Le <strong>Casting</strong></h3>
