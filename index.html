@@ -99,7 +99,7 @@
         </section>
         <section>
           <h3 class="slide-title">Les <span class="slide-title--blue">Interfaces</span></h3>
-          <pre>
+          <pre class="custom-code">
 <code data-trim class="hljs typescript">
 interface Image {
   url: string;
@@ -117,7 +117,7 @@ class Picture implements Image {
         </section>
         <section>
           <h3 class="slide-title">Le <span class="slide-title--blue">Casting</span></h3>
-          <pre>
+          <pre class="custom-code">
 <code data-trim class="hljs typescript">
 fetch(url, {method: 'GET'})
 .then((response) => {
@@ -129,7 +129,7 @@ fetch(url, {method: 'GET'})
         </section>
         <section>
           <h3 class="slide-title">Les <span class="slide-title--blue">Génériques</span></h3>
-          <pre>
+          <pre class="custom-code">
 <code data-trim class="hljs typescript">
 function getElementHash&lt;T&gt;(element: T): string {
   return element.title.getHash + element.url.getHash;
@@ -173,7 +173,7 @@ let videoHash = getElementHash(myVideo); // Type: Video
         </section>
         <section>
           <h3 class="slide-title">La configuration via <span class="slide-title--blue">tsconfig.json</span></h3>
-          <pre>
+          <pre class="custom-code">
 <code data-trim class="hljs json">
 "compilerOptions": {
   "target": "es5",
@@ -204,7 +204,7 @@ let videoHash = getElementHash(myVideo); // Type: Video
         </section>
         <section>
           <h3 class="slide-title">Pouvoir faire des déclarations kilométriques</h3>
-          <pre class="hljs">
+          <pre class="custom-code">
 <code data-trim class="hljs typescript">
 export class UserModel extends Models.Model implements IModels.IModel {
 ...
@@ -212,7 +212,7 @@ export class UserModel extends Models.Model implements IModels.IModel {
 </code>
           </pre>
           <div>ou...</div>
-          <pre class="hljs">
+          <pre class="custom-code">
 <code data-trim class="hljs typescript">
 myWonderfullMethod(param1: string, param2: any): Array< number > {
 ...

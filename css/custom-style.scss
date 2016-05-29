@@ -3,6 +3,15 @@ body {
 }
 .reveal {
 
+  .custom-code {
+    width: 100%;
+    box-shadow: none;
+    code {
+      background: none;
+      line-height: 2rem;
+      max-height: 75vh;
+    }
+  }
   .main-title {
     font-size: 2em;
   }
