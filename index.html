@@ -154,6 +154,28 @@ let videoHash = getElementHash(myVideo); // Type: Video
         <section>
           <h2>Le typage dans Typescript</h2>
         </section>
+        <section>
+          <h3>JSDOC</h3>
+          <pre class="custom-code">
+<code class="highlight typescript">
+/**
+ * Creates an image object
+ * @constructor
+ * @param {string} url Url of the image
+ * @param {string} title Title of the image
+ * @param {number} [likes=0] Number of likes given by the community
+ */
+function Person(url, title, likes) {
+  if {likes === undefined} {
+    likes = 0;
+  }
+  this.url = url;
+  this.title = title;
+  this.likes = likes;
+}
+</code>
+          </pre>
+        </section>
       </section>
       <!-- END PART 3 -->
 
