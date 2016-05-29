@@ -155,7 +155,7 @@ let videoHash = getElementHash(myVideo); // Type: Video
           <h2>Le typage dans Typescript</h2>
         </section>
         <section>
-          <h3>JSDOC</h3>
+          <h3 class="slide-title">JSDOC</h3>
           <pre class="custom-code">
 <code class="highlight typescript">
 /**
@@ -172,6 +172,27 @@ function Person(url, title, likes) {
   this.url = url;
   this.title = title;
   this.likes = likes;
+}
+</code>
+          </pre>
+        </section>
+        <section>
+          <h3 class="slide-title">Les fichiers <span class="slide-title--blue">.d.ts</span></h3>
+          <pre class="custom-code">
+<code class="hljs typescript">
+declare namespace MyNamespace {
+  export interface Image {
+    /**
+     * Url of the Image.
+     */
+    url: string;
+
+    /**
+     * Number of likes given by the community.
+     *
+     * Default value: '0'
+     */
+    likes?: number;
 }
 </code>
           </pre>
