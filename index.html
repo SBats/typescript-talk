@@ -42,11 +42,13 @@
             <img class="image image--small image--noborder talker__image" src="assets/ticabri-pearltrees.png" alt="Photo d'Enguerran Colson" />
             <h3 class="talker__name">Enguerran<br/>Colson</h3>
             <h4 class="talker__job">Développeur fullstack</h4>
+            <pre>@ticabri</pre>
           </a>
           <a href="https://github.com/SBats" class="talker">
             <img class="image image--small image--noborder talker__image" src="assets/batsman.jpg" alt="Photo de Simon Bats" />
             <h3 class="talker__name">Simon<br/>Bats</h3>
             <h4 class="talker__job">Développeur front-end</h4>
+            <pre>@simonbats12</pre>
           </a>
         </section>
         <section>
@@ -152,7 +154,7 @@ let videoHash = getElementHash(myVideo); // Type: Video
       <!-- PART 3 -->
       <section>
         <section>
-          <h2>Le typage dans Typescript</h2>
+          <h2>Le typage sans Typescript</h2>
         </section>
         <section>
           <h3 class="slide-title">JSDOC</h3>
@@ -165,7 +167,7 @@ let videoHash = getElementHash(myVideo); // Type: Video
  * @param {string} title Title of the image
  * @param {number} [likes=0] Number of likes given by the community
  */
-function Person(url, title, likes) {
+function Image(url, title, likes) {
   if {likes === undefined} {
     likes = 0;
   }
@@ -203,7 +205,7 @@ declare namespace MyNamespace {
       <!-- PART 4 -->
       <section>
         <section>
-          <h2>Le futur à portée de main</h2>
+          <h2>La transcompilation</h2>
         </section>
         <section>
           <h3 class="slide-title">Intégration en avance des nouveautées ECMAScript</h3>
@@ -236,6 +238,11 @@ declare namespace MyNamespace {
 </code>
           </pre>
         </section>
+        
+        <section>
+          <h3 class="slide-title">Les messages d'<span class="slide-title--blue">erreur</span></h3>
+          <img src="tsc-output.png" alt="Capture d'écran des sorties tsc avec erreurs" />
+        </section>
       </section>
       <!-- END PART 4 -->
 
@@ -259,7 +266,7 @@ export class UserModel extends Models.Model implements IModels.IModel {
           <div>ou...</div>
           <pre class="custom-code">
 <code data-trim class="hljs typescript">
-myWonderfullMethod(param1: string, param2: any): Array< number > {
+myWonderfullMethod(param1: string, param2: any): Array&lt;number&gt; {
 ...
 }
 </code>
@@ -375,13 +382,13 @@ myWonderfullMethod(param1: string, param2: any): Array< number > {
           <h2>Bilan et conclusions</h2>
         </section>
         <section>
-          <h3 class="slide-title">Typescrit c'est bien pour...</h3>
+          <h3 class="slide-title">Typescript c'est bien pour…</h3>
           <ul>
-            <li>S'initier au typage</li>
-            <li>Amener une rigueur de code</li>
-            <li>Profiter d'outils puissants</li>
-            <li>Améliorer son JS progresivement</li>
-            <li>Intéresser des développeurs venant de langage tels que JAVA, C# ou .Net</li>
+            <li>S'initier au typage ;</li>
+            <li>Amener une rigueur de code ;</li>
+            <li>Profiter d'outils puissants ;</li>
+            <li>Améliorer son JS progresivement ;</li>
+            <li>Intéresser des développeurs venant de langage tels que JAVA, C# ou .Net.</li>
           </ul>
         </section>
         <section>
@@ -389,7 +396,15 @@ myWonderfullMethod(param1: string, param2: any): Array< number > {
           <br/>
           <div>Faux débat</div>
           <br/>
-          <div>Utiliser Babel si les toutes dernières fonctionnalités sont indispensables</div>
+          <div>Utiliser Babel si les toutes dernières fonctionnalités sont indispensables et que le typage ne vous semble pas nécessaire</div>
+        </section>
+        <section>
+          <h3 class="slide-title">Une <span style="color: #337ab7;">communauté</span></h3>
+          <ul>
+            <li>10 000 stars sur github + 8 000 questions stackoverflow</li>
+            <li>des gros projets : angular2, ionic2, aurelia, babylonjs, …</li>
+            <li>plus si affinités… avec TypeScript 2.0 (non-nullable types, control flow based type analysis, async/await, …)</li>
+          </ul>
         </section>
       </section>
       <!-- END OUTRO -->
