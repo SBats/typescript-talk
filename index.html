@@ -170,13 +170,13 @@ let videoHash = getElementHash(myVideo); // Type: Video
           <pre class="custom-code">
 <code class="highlight typescript">
 /**
- * Creates an image object
+ * Creates a Picture object
  * @constructor
  * @param {string} url Url of the image
  * @param {string} title Title of the image
  * @param {number} [likes=0] Number of likes given by the community
  */
-function Image(url, title, likes) {
+function Picture(url, title, likes) {
   if (likes === undefined) {
     likes = 0;
   }
@@ -192,9 +192,9 @@ function Image(url, title, likes) {
           <pre class="custom-code">
 <code class="hljs typescript">
 declare namespace MyNamespace {
-  export interface Image {
+  export interface Picture {
     /**
-     * Url of the Image.
+     * Url of the picture.
      */
     url: string;
 
