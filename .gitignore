@@ -9,8 +9,3 @@ log/*.log
 tmp/**
 node_modules/
 .sass-cache
-css/reveal.min.css
-css/reveal.css
-css/custom-style.min.css
-css/custom-style.css
-js/reveal.min.js

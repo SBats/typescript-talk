@@ -1,0 +1,106 @@
+body {
+  color: #1877C8; }
+
+.reveal .custom-code {
+  width: 100%;
+  box-shadow: none; }
+  .reveal .custom-code code {
+    background: none;
+    line-height: 2rem;
+    max-height: 75vh; }
+
+.reveal .main-title {
+  font-size: 2em; }
+
+.reveal .slide-title {
+  text-transform: initial;
+  margin-bottom: 3rem; }
+  .reveal .slide-title--blue {
+    color: #1877C8; }
+
+.reveal .image {
+  background-color: #222;
+  box-shadow: unset; }
+  .reveal .image--noborder {
+    border: 0; }
+  .reveal .image--small {
+    height: 180px; }
+
+.reveal .iframe--fullpage {
+  width: 100%;
+  height: 100%; }
+
+.reveal .talker {
+  float: left;
+  width: 50%; }
+  .reveal .talker__image {
+    border-radius: 50%; }
+
+.reveal .company,
+.reveal .talker {
+  display: block; }
+  .reveal .company__name,
+  .reveal .talker__name {
+    line-height: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .reveal .company__job,
+  .reveal .talker__job {
+    font-weight: lighter; }
+  .reveal .company__sub,
+  .reveal .talker__sub {
+    font-size: 1.8rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+  .reveal .company__twitter,
+  .reveal .talker__twitter {
+    display: block;
+    font-family: monospace;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0 2rem; }
+
+.reveal .created-by {
+  margin-top: 2rem; }
+  .reveal .created-by__image {
+    height: 70px; }
+
+.reveal .editors-list {
+  margin: 0;
+  list-style: none;
+  text-align: center; }
+  .reveal .editors-list__item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 2rem; }
+  .reveal .editors-list__image {
+    height: 4rem;
+    max-width: 4rem;
+    background: transparent;
+    border: none;
+    box-shadow: none; }
+  .reveal .editors-list__link {
+    display: block;
+    color: rgba(255, 255, 255, 0.8); }
+    .reveal .editors-list__link:focus, .reveal .editors-list__link:hover {
+      color: white; }
+      .reveal .editors-list__link:focus img, .reveal .editors-list__link:hover img {
+        background: none;
+        box-shadow: none;
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1); }
+
+.reveal .typings-cli {
+  display: block;
+  color: rgba(255, 255, 255, 0.8); }
+  .reveal .typings-cli img {
+    background: transparent;
+    border: none;
+    box-shadow: none; }
+  .reveal .typings-cli:focus, .reveal .typings-cli:hover {
+    color: white; }
+    .reveal .typings-cli:focus img, .reveal .typings-cli:hover img {
+      background: none;
+      box-shadow: none;
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
